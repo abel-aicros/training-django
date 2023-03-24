@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -26,7 +27,6 @@ SECRET_KEY = 'django-insecure-x9nrisw^d4ijfu%6bl!@f(=n5fxn38ig1x*v(a0y$fzr$hvxe*
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'training',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': 'localhost',
+        'NAME': 'training_ck0s',
+        'USER': 'abeldarrain',
+        'PASSWORD': 'joit2LxwfWjENmmEflah4H1nmF2lgbei',
+        'HOST': 'dpg-cgeup9m4dadd1mgj469g-a',
         'PORT': '5432',
     }
 }
