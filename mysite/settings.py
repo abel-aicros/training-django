@@ -83,8 +83,19 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 import dj_database_url
 
 
+# DATABASES = {
+#     'default': dj_database_url.parse(env('DATABASE_URL'))
+# }
+
 DATABASES = {
-    'default': dj_database_url.parse(env('DATABASE_URL'))
+  'default': {
+    'ENGINE': 'django.db.backends.postgresql',
+    'NAME': 'neondb',
+    'USER': 'abel-aicros',
+    'PASSWORD': 'R2Gy7TaJqHLo',
+    'HOST': 'ep-misty-frog-305205.us-east-2.aws.neon.tech',
+    'PORT': '5432',
+  }
 }
 
 
